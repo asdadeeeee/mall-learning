@@ -10,6 +10,6 @@ import org.springframework.context.annotation.Configuration;
  * @github https://github.com/macrozheng
  */
 @Configuration
-@MapperScan("com.macro.mall.tiny.dao")
+@MapperScan({"com.macro.mall.tiny.dao","com.macro.mall.tiny.mbg.mapper"})
 public class MyBatisConfig {
 }

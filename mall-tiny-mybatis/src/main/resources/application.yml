@@ -13,7 +13,7 @@ spring:
 mybatis:
   mapper-locations:
     - classpath:dao/*.xml
-    - classpath:ddd/*.xml
+    - classpath:mbg/mapper/*.xml
   configuration:
     # 下划线自动转驼峰
     map-underscore-to-camel-case: true
