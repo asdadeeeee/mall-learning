@@ -1,11 +1,14 @@
 package com.macro.mall.tiny.common.api;
 
+import lombok.extern.java.Log;
+
 /**
  * @auther macrozheng
  * @description 通用返回对象
  * @date 2019/4/19
  * @github https://github.com/macrozheng
  */
+@Log
 public class CommonResult<T> {
     private long code;
     private String message;
@@ -26,6 +29,7 @@ public class CommonResult<T> {
      * @param data 获取的数据
      */
     public static <T> CommonResult<T> success(T data) {
+        log.info("CommonResult success");
         return new CommonResult<T>(ResultCode.SUCCESS.getCode(), ResultCode.SUCCESS.getMessage(), data);
     }
 
